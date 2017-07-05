@@ -9,6 +9,7 @@
     <module>singleton</module>
     <module>observer</module>
     <module>decorator</module>
+      <module>command</module>
   </modules>
   <packaging>pom</packaging>
 
