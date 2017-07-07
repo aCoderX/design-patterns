@@ -12,6 +12,7 @@
       <module>command</module>
       <module>adapter</module>
       <module>facade</module>
+      <module>templatemethod</module>
   </modules>
   <packaging>pom</packaging>
 
