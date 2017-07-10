@@ -15,6 +15,7 @@
       <module>templatemethod</module>
       <module>iterator</module>
       <module>composite</module>
+    <module>state</module>
   </modules>
   <packaging>pom</packaging>
 
