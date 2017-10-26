@@ -16,6 +16,9 @@ public abstract class Component {
     String getName(){
         throw new UnsupportedOperationException();
     }
+    Object getSimple(){
+        throw new UnsupportedOperationException();
+    }
     List<Component> getChild(){
         throw new UnsupportedOperationException();
     }

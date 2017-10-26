@@ -27,12 +27,17 @@ public class Leaf extends Component {
     }
 
     @Override
+    Object getSimple() {
+        return simple;
+    }
+
+    @Override
     Map<String,Object> info() {
         Map<String, Object> map = new TreeMap<>();
         map.put("type", type.getDescription());
         map.put("description", description);
         map.put("require", require);
-        map.put("simple", simple);
+        map.put("simple", getSimple());
         return map;
     }
 }

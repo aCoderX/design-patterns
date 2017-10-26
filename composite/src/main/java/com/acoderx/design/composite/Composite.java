@@ -10,13 +10,11 @@ public class Composite extends Component {
     private ParamType type = ParamType.OBJECT;
     private String description;
     private boolean require;
-    private Object simple;
 
     public Composite(String name, String description, boolean require, Object simple) {
         this.name = name;
         this.description = description;
         this.require = require;
-        this.simple = simple;
     }
 
     ArrayList<Component> list = new ArrayList();
@@ -36,6 +34,17 @@ public class Composite extends Component {
     }
 
     @Override
+    Object getSimple() {
+        Map<String, Object> simpleMap = new TreeMap<>();
+        Iterator<Component> iterable = list.iterator();
+        while(iterable.hasNext()){
+            Component component = iterable.next();
+            simpleMap.put(component.getName(), component.getSimple());
+        }
+        return simpleMap;
+    }
+
+    @Override
     List<Component> getChild() {
         return list;
     }
@@ -43,11 +52,11 @@ public class Composite extends Component {
     @Override
     Map<String, Object> info() {
         Map<String, Object> map = new TreeMap<>();
-        Iterator<Component> iterable = list.iterator();
         map.put("type", type.getDescription());
         map.put("description", description);
         map.put("require", require);
-        map.put("simple", simple);
+        map.put("simple", getSimple());
+        Iterator<Component> iterable = list.iterator();
         Map<String, Object> childMap = new TreeMap<>();
         while(iterable.hasNext()){
             Component component = iterable.next();

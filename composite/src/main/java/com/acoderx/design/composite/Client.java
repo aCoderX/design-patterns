@@ -9,11 +9,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Client {
     public static void main(String[] args){
 
-        Component item = new Composite("test","一级父节点",true,null);
-        Component subItem1 = new Composite("test2.1","二级父节点",true,null);
-        Component subItem2 = new Leaf("test3",ParamType.INT,"三级节点",true,null);
+        Component item = new Composite("test","一级父节点",true,"ss");
+        Component subItem1 = new Composite("test2.1","二级父节点",true,"haha");
+        Component subItem2 = new Leaf("test3",ParamType.INT,"三级节点",true,"dice");
         subItem1.add(subItem2);
-        Component subItem3 = new Leaf("test2.2",ParamType.STRING,"二级节点",true,null);
+        Component subItem3 = new Leaf("test2.2",ParamType.STRING,"二级节点",true,"sjsjsj");
         item.add(subItem1);
         item.add(subItem3);
 
