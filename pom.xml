@@ -18,6 +18,7 @@
       <module>state</module>
       <module>strategy</module>
       <module>chain</module>
+      <module>builder</module>
   </modules>
   <packaging>pom</packaging>
 
