@@ -12,13 +12,14 @@
       <module>command</module>
       <module>adapter</module>
       <module>facade</module>
-      <module>templatemethod</module>
+      <module>template-method</module>
       <module>iterator</module>
       <module>composite</module>
       <module>state</module>
       <module>strategy</module>
       <module>chain</module>
       <module>builder</module>
+      <module>simple-factory</module>
   </modules>
   <packaging>pom</packaging>
 
