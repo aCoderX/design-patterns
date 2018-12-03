@@ -8,9 +8,9 @@ package com.acoderx.design.simplefactory;
  */
 public class Client {
     public static void main(String[] args){
-        Fruit apple = FruitFactory.getFruit("apple");
-        System.out.println(apple.getTaste());
-        Fruit orange = FruitFactory.getFruit("orange");
-        System.out.println(orange.getTaste());
+        Mouse hp = MouseFactory.createMouse("hp");
+        System.out.println(hp.getName());
+        Mouse dell = MouseFactory.createMouse("dell");
+        System.out.println(dell.getName());
     }
 }

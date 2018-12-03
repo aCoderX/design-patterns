@@ -1,11 +1,11 @@
 package com.acoderx.design.simplefactory;
 
 /**
- * Description:
+ * Description:鼠标
  *
  * @author xudi
  * @since 2018-11-30
  */
-public interface Fruit {
-    String getTaste();
+public interface Mouse {
+    String getName();
 }

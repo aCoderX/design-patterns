@@ -1,16 +1,16 @@
 package com.acoderx.design.simplefactory;
 
 /**
- * Description:
+ * Description:hp鼠标
  *
  * @author xudi
  * @since 2018-11-30
  */
-public class Orange implements Fruit {
+public class HpMouse implements Mouse {
 
     @Override
-    public String getTaste() {
-        return "sour";
+    public String getName() {
+        return "hp";
     }
 
 }
