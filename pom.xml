@@ -25,6 +25,7 @@
       <module>bridge</module>
       <module>flyweight</module>
       <module>memento</module>
+      <module>visitor</module>
   </modules>
   <packaging>pom</packaging>
 
